@@ -1,0 +1,15 @@
+﻿  main.cpp
+d:\projects\с++\testsfml\main.cpp(22): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\projects\с++\testsfml\main.cpp(23): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+d:\projects\с++\testsfml\main.cpp(72): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
+d:\projects\с++\testsfml\main.cpp(85): warning C4305: =: усечение из "double" к "float"
+d:\projects\с++\testsfml\main.cpp(86): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+d:\projects\с++\testsfml\main.cpp(93): warning C4305: =: усечение из "double" к "float"
+d:\projects\с++\testsfml\main.cpp(94): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+d:\projects\с++\testsfml\main.cpp(102): warning C4305: =: усечение из "double" к "float"
+d:\projects\с++\testsfml\main.cpp(103): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+d:\projects\с++\testsfml\main.cpp(110): warning C4305: =: усечение из "double" к "float"
+d:\projects\с++\testsfml\main.cpp(111): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+d:\projects\с++\testsfml\main.cpp(131): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  testSFML.vcxproj -> D:\Projects\С++\testSFML\x64\Debug\testSFML.exe
+  testSFML.vcxproj -> D:\Projects\С++\testSFML\x64\Debug\testSFML.pdb (Full PDB)
