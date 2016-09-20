@@ -1,6 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include "map.h"
-#include "view.h"
+//#include "view.h"
 using namespace sf;
 ////////////////////////////////////////////////////КЛАСС ИГРОКА////////////////////////
 class Player {
@@ -46,27 +46,17 @@ public:
 
 int main()
 {
-	RenderWindow window(sf::VideoMode(640, 480), "GAME"); 
-	view.reset(FloatRect(0, 0, 540, 480));
-
+	RenderWindow window(sf::VideoMode(672, 672), "GAME"); 
+	//view.reset(FloatRect(0, 0, 672, 672));
 	Image map_image;//объект изображения для карты
 	map_image.loadFromFile("images/map.png");//загружаем файл для карты
 	Texture map;//текстура карты
 	map.loadFromImage(map_image);//заряжаем текстуру картинкой
 	Sprite s_map;//создаём спрайт для карты
 	s_map.setTexture(map);//заливаем текстуру спрайтом
-	//herotexture.loadFromFile("images/hero.png");
-	//Sprite herosprite;
-	//herosprite.setTexture(herotexture);
-	//herosprite.setTextureRect(IntRect(0,192,96, 96));
-	//herosprite.setPosition(0,0);
-
-
 	Player p("hero.png", 250, 250, 96.0, 96.0);//создаем объект p класса player,задаем "hero.png" как имя файла+расширение, далее координата Х,У, ширина, высота.
-
 	float CurrentFrame=0;
 	Clock clock; 
-
 	while (window.isOpen())
 	{
 		float time = clock.getElapsedTime().asMicroseconds();
@@ -80,60 +70,45 @@ int main()
 			if (event.type == sf::Event::Closed)
 				window.close();
 		}
-		///////////////////////////////////////////Управление персонажем с анимацией////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////Управление персонажем с анимацией///////////////
 		if ((Keyboard::isKeyPressed(Keyboard::Left) || (Keyboard::isKeyPressed(Keyboard::A)))) {
 			p.dir = 1; p.speed = 0.1;//dir =1 - направление вверх, speed =0.1 - скорость движения. Заметьте - время мы уже здесь ни на что не умножаем и нигде не используем каждый раз
 			CurrentFrame += 0.005*time;
 			if (CurrentFrame > 3) CurrentFrame -= 3;
 			p.sprite.setTextureRect(IntRect(96 * int(CurrentFrame), 96, 96, 96)); //через объект p класса player меняем спрайт, делая анимацию (используя оператор точку)
-			getplayercoordinateforview(p.getplayercoordinateX(), p.getplayercoordinateY());
 		}
-
 		if ((Keyboard::isKeyPressed(Keyboard::Right) || (Keyboard::isKeyPressed(Keyboard::D)))) {
 			p.dir = 0; p.speed = 0.1;//направление вправо, см выше
 			CurrentFrame += 0.005*time;
 			if (CurrentFrame > 3) CurrentFrame -= 3;
 			p.sprite.setTextureRect(IntRect(96 * int(CurrentFrame), 192, 96, 96)); //через объект p класса player меняем спрайт, делая анимацию (используя оператор точку)
-			getplayercoordinateforview(p.getplayercoordinateX(), p.getplayercoordinateY());
-
 		}
-
 		if ((Keyboard::isKeyPressed(Keyboard::Up) || (Keyboard::isKeyPressed(Keyboard::W)))) {
 			p.dir = 3; p.speed = 0.1;//направление вниз, см выше
 			CurrentFrame += 0.005*time;
 			if (CurrentFrame > 3) CurrentFrame -= 3;
 			p.sprite.setTextureRect(IntRect(96 * int(CurrentFrame), 288, 96, 96)); //через объект p класса player меняем спрайт, делая анимацию (используя оператор точку)
-			getplayercoordinateforview(p.getplayercoordinateX(), p.getplayercoordinateY());
-
 		}
 		if ((Keyboard::isKeyPressed(Keyboard::Down) || (Keyboard::isKeyPressed(Keyboard::S)))) { //если нажата клавиша стрелка влево или англ буква А
 			p.dir = 2; p.speed = 0.1;//направление вверх, см выше
 			CurrentFrame += 0.005*time; //служит для прохождения по "кадрам". переменная доходит до трех суммируя произведение времени и скорости. изменив 0.005 можно изменить скорость анимации
 			if (CurrentFrame > 3) CurrentFrame -= 3; //проходимся по кадрам с первого по третий включительно. если пришли к третьему кадру - откидываемся назад.
 			p.sprite.setTextureRect(IntRect(96 * int(CurrentFrame), 0, 96, 96)); //проходимся по координатам Х. получается 96,96*2,96*3 и опять 96
-			getplayercoordinateforview(p.getplayercoordinateX(), p.getplayercoordinateY());
-
 		}
-
+		//getplayercoordinateforview(p.getplayercoordinateX(), p.getplayercoordinateY());
 		p.udate(time);
-		window.setView(view);
-		window.clear();
-
-			/////////////////////////////Рисуем карту/////////////////////
+		//window.setView(view);
+		window.clear(Color(255, 174, 201));
+/////////////////////////////Рисуем карту/////////////////////
 			for (int i = 0; i < HEIGHT_MAP; i++)
 				for (int j = 0; j < WIDTH_MAP; j++)
 				{
 					if (TileMap[i][j] == ' ')  s_map.setTextureRect(IntRect(0, 0, 32, 32)); //если встретили символ пробел, то рисуем 1й квадратик
 					if (TileMap[i][j] == 's')  s_map.setTextureRect(IntRect(32, 0, 32, 32));//если встретили символ s, то рисуем 2й квадратик
 					if ((TileMap[i][j] == '0')) s_map.setTextureRect(IntRect(64, 0, 32, 32));//если встретили символ 0, то рисуем 3й квадратик
-
-
 					s_map.setPosition(j * 32, i * 32);//по сути раскидывает квадратики, превращая в карту. то есть задает каждому из них позицию. если убрать, то вся карта нарисуется в одном квадрате 32*32 и мы увидим один квадрат
-
 					window.draw(s_map);//рисуем квадратики на экран
 				}
-
-
 		window.draw(p.sprite);
 		window.display();
 	}
