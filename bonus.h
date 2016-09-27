@@ -4,24 +4,30 @@ using namespace sf;
 int playerScore = 0;
 bool randomBonusFlag = true;
 float createObjectForMapTimer = 0;
+
 int get_Num(int i, int j, int max) {
 	return i*max + j;
 }
+
+
+Image imageCreator(String Name,const sf::Color c = sf::Color::Transparent) {
+	Image bufer;
+	bufer.loadFromFile("images/" + Name);
+	if (c != c.Transparent)bufer.createMaskFromColor(c);
+	return bufer;
+};
+
 
 class Bonus {
 private:float x, y;
 public:
 	int Score;
 	float w, h = 0;
-	String File;
-	Image image;
 	Texture texture;
 	Sprite sprite;
-	Bonus(String F, int X, int Y, float W, float H,int score) {//Конструктор с параметрами(формальными) для класса Player. При создании объекта класса мы будем задавать имя файла, координату Х и У, ширину и высоту
-		File = F;
+	Bonus(Image &image, int X, int Y, float W, float H,int score) {
 		w = W; h = H;
 		Score = score;
-		image.loadFromFile("images/" + File);
 		texture.loadFromImage(image);
 		sprite.setTexture(texture);
 		x = X; y = Y;
@@ -46,10 +52,11 @@ public:
 Bonus *Coins[HEIGHT_MAP* WIDTH_MAP];
 
 void Bonus_create() {
+
 	for (int i = 0; i < HEIGHT_MAP; i++)
 		for (int j = 0; j < WIDTH_MAP; j++) {
 			if (TileMap[i][j] == '1')
-				Coins[get_Num(i, j, WIDTH_MAP)] = new Bonus("coin5.png", j * 32 + 7, i * 32 + 7, 18, 18, 10);
+				Coins[get_Num(i, j, WIDTH_MAP)] = new Bonus(imageCreator("coin5.png"), j * 32 + 7, i * 32 + 7, 18, 18, 10);
 			else
 				Coins[get_Num(i, j, WIDTH_MAP)] = NULL;
 		};
@@ -69,9 +76,9 @@ void randomBonusGenerate() {
 	}
 		if (TileMap[randomElementY][randomElementX] == ' ') {
 			randomBonusFlag = false;
-			Coins[get_Num(randomElementY, randomElementX, WIDTH_MAP)] = new Bonus("coin10.png", randomElementX * 32 + 7, randomElementY * 32 + 7, 18, 18, 20);
+			Coins[get_Num(randomElementY, randomElementX, WIDTH_MAP)] = new Bonus(imageCreator("coin10.png", Color(255, 255, 255)), randomElementX * 32 + 7, randomElementY * 32 + 7, 18, 18, 20);
 			std::cout << "BONUS:\n";
-			std::cout << "coordinate of Bonus X:" << randomElementX << "\n" << "coordinate of Bonus Y:" << randomElementY << "\n\n";
+			std::cout << "coordinate of Bonus X:" << randomElementX << "\n" << "coordinate of Bonus Y:" << randomElementY << "\n";
 			TileMap[randomElementY][randomElementX] = '1';
 		}
 };

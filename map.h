@@ -14,7 +14,7 @@ String TileMap[HEIGHT_MAP] = {
 	"00000010001010001000000",
 	"00000010111111101000000",
 	"00000010100000101000000",
-	"0s1111111000001111111s0",
+	"0L1111111000001111111R0",
 	"00000010100000101000000",
 	"00000010111111101000000",
 	"00000010100000101000000",
@@ -30,34 +30,31 @@ String TileMap[HEIGHT_MAP] = {
 class Map
 {
 public:
-	String File;
-	Image image;
 	Texture texture;
 	Sprite sprite;
 	Font font;
 	Text text;
-	Map(String F) {	
+	Map(Image &image) {
 		font.loadFromFile("CyrilicOld.TTF");
 		text =  Text("", font, 20); 
-		text.setFillColor(Color(255, 255, 255));
 		text.setStyle(Text::Bold);
 		text.setPosition(0, 0);
-		File = F;
-		image.loadFromFile("images/" + File);
 		texture.loadFromImage(image);
 		sprite.setTexture(texture);
 	}
-	~Map() {};
-	void Map_update(RenderWindow *w) {
+	void mapUpdate(RenderWindow *w,int  playerScore) {
 		for (int i = 0; i < HEIGHT_MAP; i++)
-			for (int j = 0; j < WIDTH_MAP; j++)
-			{
+			for (int j = 0; j < WIDTH_MAP; j++){
 				if ((TileMap[i][j] == '1') || (TileMap[i][j] == ' ')) sprite.setTextureRect(IntRect(0, 0, 32, 32));
-				if (TileMap[i][j] == 's')  sprite.setTextureRect(IntRect(32 * 5, 0, 32, 32));
+				if (TileMap[i][j] == 'L')  sprite.setTextureRect(IntRect(32 * 1, 0, 32, 32));
+				if (TileMap[i][j] == 'R')  sprite.setTextureRect(IntRect(32 * 2, 0, 32, 32)); 
 				if ((TileMap[i][j] == '0')) sprite.setTextureRect(IntRect(96, 0, 32, 32));
 				sprite.setPosition(j * 32, i * 32);
 				w->draw(sprite);
 			}
-
+		std::ostringstream playerScoreString;
+		playerScoreString << playerScore;
+		text.setString("Score:" + playerScoreString.str());
+		w->draw(text);
 	}
 };
