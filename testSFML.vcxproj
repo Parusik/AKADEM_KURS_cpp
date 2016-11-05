@@ -156,13 +156,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bonus.h" />
+    <ClInclude Include="entitys.h" />
     <ClInclude Include="map.h" />
+    <ClInclude Include="menu.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="images\coin10.png" />
     <Image Include="images\coin5.png" />
     <Image Include="images\map.png" />
     <Image Include="images\player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
