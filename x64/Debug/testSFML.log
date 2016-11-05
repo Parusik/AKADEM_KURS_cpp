@@ -1,2 +1,76 @@
-﻿  testSFML.vcxproj -> D:\Projects\С++\testSFML\x64\Debug\testSFML.exe
-  testSFML.vcxproj -> D:\Projects\С++\testSFML\x64\Debug\testSFML.pdb (Full PDB)
+﻿  main.cpp
+c:\users\kparu\documents\github\akadem_kurs_cpp\map.h(110): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(40): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(45): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(47): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(59): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(66): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(68): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(74): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(81): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(83): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(138): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(138): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(139): warning C4305: =: усечение из "double" к "float"
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(147): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(148): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(149): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(208): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(209): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(210): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(211): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(214): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(215): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(216): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(217): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(221): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(223): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(247): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(262): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(262): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(263): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(263): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(264): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(265): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(266): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(266): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(267): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(268): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(269): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(270): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\bonus.h(270): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(26): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(53): warning C4305: инициализация: усечение из "double" к "const float"
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(33): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(34): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(37): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(38): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(39): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(40): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(92): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(98): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(104): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(110): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(131): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(308): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(341): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(342): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(400): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(401): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(404): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(405): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(406): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(407): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(447): warning C4305: =: усечение из "double" к "float"
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(468): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(469): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\main.cpp(23): warning C4305: аргумент: усечение из "double" к "float"
+c:\users\kparu\documents\github\akadem_kurs_cpp\main.cpp(24): warning C4305: аргумент: усечение из "double" к "float"
+c:\users\kparu\documents\github\akadem_kurs_cpp\main.cpp(25): warning C4305: аргумент: усечение из "double" к "float"
+c:\users\kparu\documents\github\akadem_kurs_cpp\main.cpp(39): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
+c:\users\kparu\documents\github\akadem_kurs_cpp\main.cpp(10): warning C4715: exit_chek: значение возвращается не при всех путях выполнения
+c:\users\kparu\documents\github\akadem_kurs_cpp\main.cpp(150): warning C4717: gameRunning: рекурсия на всех путях выполнения, функция вызовет переполнение стека
+c:\users\kparu\documents\github\akadem_kurs_cpp\main.cpp(140): warning C4715: startGame: значение возвращается не при всех путях выполнения
+c:\users\kparu\documents\github\akadem_kurs_cpp\entitys.h(280): warning C4715: Enemy::WayToPlayer: значение возвращается не при всех путях выполнения
+  testSFML.vcxproj -> C:\Users\kparu\Documents\GitHub\AKADEM_KURS_cpp\x64\Debug\testSFML.exe
+  testSFML.vcxproj -> C:\Users\kparu\Documents\GitHub\AKADEM_KURS_cpp\x64\Debug\testSFML.pdb (Full PDB)

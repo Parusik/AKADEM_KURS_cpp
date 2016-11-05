@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Pokeball">
+    <Position X="14.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAABAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>bonus.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Simple_Bonus">
+    <Position X="5.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQQAgACAAAAgAAAQAAAQAABAAAgAIQAhgAAAEAAA=</HashCode>
+      <FileName>bonus.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coin">
+    <Position X="7.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAABAAAAAAAAAAAQAAAAAAEAAA=</HashCode>
+      <FileName>bonus.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ball">
+    <Position X="3.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAEAIA=</HashCode>
+      <FileName>bonus.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoldCoin">
+    <Position X="8" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAgQAAAAAAAAAAAAAIAAAAAAAABAAEAAAAAAAAA=</HashCode>
+      <FileName>bonus.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pokemon">
+    <Position X="10.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgCAAAAAACACAQAAAAAIBAAAJAAAAQAQAAAAAAAEBAA=</HashCode>
+      <FileName>bonus.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Map">
+    <Position X="16.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAEBAAAAAAAAAAAAAAABAAAkAIAAAAAgAAAAA=</HashCode>
+      <FileName>map.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entity">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAAAAACAAAAAAAAAIAAQABBKAAwAAQAhgAAAABAA=</HashCode>
+      <FileName>entitys.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RAACAAAAAAAARACQAAAAAAAAgAAAAAABAACAAQAAAAA=</HashCode>
+      <FileName>entitys.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hearts" Collapsed="true">
+    <Position X="14.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAgAAAAAAAIAAACA=</HashCode>
+      <FileName>entitys.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <InheritanceLine Type="Entity" FixedFromPoint="true">
+      <Path>
+        <Point X="8" Y="0.687" />
+        <Point X="7.25" Y="0.687" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAABQAAIAAIBAAEMACAAAgQhAAAAAAEGAA=</HashCode>
+      <FileName>entitys.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bullet">
+    <Position X="10" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAACAEAAAAAAAUAAA=</HashCode>
+      <FileName>entitys.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
